@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>RSVP</title>
+		<title>RSVP - CNY</title>
 		<!-- <link rel = "stylesheet" href = "week1.css"> -->
 	</head>
 	<body>
 		<h1>RSVP for the New Year Celebration Party</h1>
-		<img src = "./pic/headimage.jpg" height = "200px">
+		<img src = "./pic/headimage.jpg" height = "200px" alt = "header pic">
 		<h2>Event Detail</h2>
-			<p>Celebrating 2018! We are traveling to Detroit for an afternoon-tea party.<br/>
+			<p>Celebrating the Year of Dog (2018 in lunar calendar)! <br/>
+				We are traveling to Detroit for an afternoon-tea party.<br/>
 				Please fill out the below information if you want to join the event. Thanks.
 			</p>
 			<ul>
@@ -21,36 +22,45 @@
 
 		<form>
 			<!-- <div id="name"> -->
-			Name:
-			<input type="text" name="name" id = "name"></label><br>
+			<label for="name">Name</label>
+			<input type="text" name="name" id = "name"><br>
 			<label for="dob">DOB:</label>
 			<input type="date" name="DOB" id = "dob"><br>
 			<br>
 
-			<strong>Please enter your choice of snack:</strong><br>
+
+			<strong>Please enter your choice of snack:</strong>
 			<table>
 				<tr>
 					<td><input type="radio" name="snack" value="pizza"> Pizza<br></td>
-					<td><img src="https://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" height = "100px"></td>
+					<td><img src="https://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" height = "100px" alt = "pizza photo"></td>
 				</tr>
   				<tr>
   					<td><input type="radio" name="snack" value="donut"> Donut<br></td>
-  					<td><img src = "https://img.huffingtonpost.com/asset/575050041200002e00895299.jpeg?ops=crop_0_127_1254_619,scalefit_720_noupscale" height = "100px"></td>
+  					<td><img src = "https://img.huffingtonpost.com/asset/575050041200002e00895299.jpeg?ops=crop_0_127_1254_619,scalefit_720_noupscale" height = "100px" alt = "donut photo"></td>
   				</tr>
   				<tr>
   					<td><input type="radio" name="snack" value="vegan"> Vegan Stuff<br></td>
-  					<td><img src = "./pic/vegan.jpg" height = "100px">
+  					<td><img src = "./pic/vegan.jpg" height = "100px" alt = "vegan photo">
   				</tr>
   			</table>
   			<br>
 
 	  		<strong>Please enter your choice of drink:</strong><br>
-			<input type="radio" name="snack1" value="coffee"> Coffee<br>
-  			<input type="radio" name="snack2" value="tea"> Tea<br>
-  			<input type="radio" name="snack3" value="water"> Water<br>
+			<input type="radio" name="drink" value="coffee"> Coffee<br>
+  			<input type="radio" name="drink" value="tea"> Tea<br>
+  			<input type="radio" name="drink" value="water"> Water<br>
   			<br>
 		
 			<input type="submit" name = "submit" >
+		<div>
+			<h3>Teammate:</h3>
+			<h4><a href = "https://shih-ting.github.io/ICE_1/Week1_InClassExercise.html">Amy Lin</a></h4>
+			<h4><a href = "https://hohanine.github.io/Week1_InClassExercise.html">Hannah Chen</a></h4>
+			<h3>Our original sketch:</h3>
+			<img src = "./pic/sketch.jpg" alt="Sketch" height = "200px">
+
+		</div>
 		</form>
 
 	</body>
