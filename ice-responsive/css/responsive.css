@@ -1,0 +1,47 @@
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+  .top-nav ul {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  .top-nav ul li{
+    display: inline-block;
+    border-top: none;
+
+  }
+  .logo {
+    border-bottom: 1px solid red;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  
+  .top-nav ul {
+    float:right;
+    vertical-align: middle;
+    margin-top:1em;
+  }
+
+  .logo {
+    display: inline-block;
+    float: left;
+  }
+  .top-nav ul li {
+    display: inline-block;
+    /*position: center;*/
+
+  }
+  .main-content-home {
+    margin-top: 3em;
+    /*padding: 0em;*/
+    position: static;
+    display:block;
+  }
+
+  .photo-grid {
+
+  }
+}
