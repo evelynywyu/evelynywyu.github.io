@@ -16,6 +16,7 @@
 		border:5px solid black;
 		margin:0 auto;
     	background-repeat: no-repeat;
+    	background-image: url('');
     	color:#FFFFFF;
     	text-align: center;
     	background-color: #8e68ff;
@@ -39,6 +40,21 @@
 	<script type="text/javascript">
 	// I used Two functions here.  Starter idea at: 
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	var originalText = "Hover over an image below.";  // shouldn't harcord this -- to be fixed 
+	function upDate(previewPic) {
+		var srcText = previewPic.src;
+		document.getElementById('image').innerHTML = previewPic.alt;
+		document.getElementById('image').style.backgroundImage = srcText;
+
+	}
+
+	function unDo() {
+		document.getElementById('image').innerHTML = originalText;
+
+
+	}
+
+
 	</script>
 </head>
 
@@ -49,20 +65,28 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
+		<img class = "preview"
 			alt = "Styling with a Bandana" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+			onmouseover = upDate(this)
+			onMouseOut = unDo();
 			>
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
 		<img class = "preview" 
 			alt = "With My Boy" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+			onmouseover = upDate(this)
+			onMouseOut = unDo();
+			>
 	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+			alt = "Young Puppy"
+			onmouseover = upDate(this)
+			onMouseOut = unDo();
+			>
 </body>
 </html>
