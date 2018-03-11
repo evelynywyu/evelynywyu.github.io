@@ -18,16 +18,15 @@
         var x = document.getElementById("fullname");
         var y = document.getElementById("streetaddr");
         
-        if ( x.value === "") {
+        if (x.value ==="" && y.value ==="") {
             document.getElementById("nameerrormsg").style.display = "block";
+            document.getElementById("addrerrormsg").style.display = "block";
             return false;
-
         } else if (y.value === "") {
             document.getElementById("addrerrormsg").style.display = "block";
             return false;
-        } else if (x.value ==="" && y.value ==="") {
+        } else if ( x.value === "") {
             document.getElementById("nameerrormsg").style.display = "block";
-            document.getElementById("addrerrormsg").style.display = "block";
             return false;
         } else {
             return true;
