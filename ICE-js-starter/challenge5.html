@@ -44,7 +44,7 @@
 	function upDate(previewPic) {
 		var srcText = previewPic.src;
 		document.getElementById('image').innerHTML = previewPic.alt;
-		document.getElementById('image').style.backgroundImage = srcText;
+		document.getElementById('image').style.backgroundImage = "url('"+ previewPic.src + "')";
 
 	}
 
