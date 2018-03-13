@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Challenge 5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<style>
 	body{
 		margin: 2%;
@@ -39,6 +41,24 @@
 	<script type="text/javascript">
 	// I used Two functions here.  Starter idea at: 
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	$(document).ready(function() {
+		$(".preview").on('mouseover', showImage);
+		$(".preview").on('mouseleave', hideImage);
+
+	})
+
+	function showImage(){
+		$('#image')
+			.css("background-image","url(" + this.src + ")")
+			.text(this.alt);
+	}
+
+	function hideImage(){
+		$('#image')
+			.css("background-image", "url('')")
+			.text("Hover over an image below.")
+	}
+
 	</script>
 </head>
 
