@@ -42,8 +42,8 @@
 	// I used Two functions here.  Starter idea at: 
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
 	$(document).ready(function() {
-		$(".preview").on('mouseover', showImage);
-		$(".preview").on('mouseleave', hideImage);
+		$(".preview").on('mouseover focus', showImage);
+		$(".preview").on('mouseout blur', hideImage);
 
 	})
 
@@ -72,17 +72,19 @@
 		<img class = "preview" 
 			alt = "Styling with a Bandana" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+			tabindex = "1" >
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
 		<img class = "preview" 
 			alt = "With My Boy" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";
+			tabindext = "1">
 	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+			alt = "Young Puppy";
+			tabindext = "1">
 </body>
 </html>
