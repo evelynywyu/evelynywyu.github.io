@@ -1,0 +1,51 @@
+body {
+	/*background-color: lightblue;*/
+}
+
+header .row {
+	display: flex;
+	align-items: center;
+	
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.short-des {
+	text-align: center;
+	margin:1%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.site-main-page .row {
+	/*width: 40%;
+	height: 40%;*/
+}
+
+.project-pic {
+	margin-top: 1%;
+/*	margin-right: 0.1%;
+	margin-left:0.1%;*/
+	margin-bottom: 1%;
+	align-items: center;
+	position: relative;
+	float: left;
+}
+
+.project-pic img {
+	width: 90%;
+	/*align-items: center;*/
+}
+
+footer {
+	margin: 5%;
+	text-align: center;
+}
