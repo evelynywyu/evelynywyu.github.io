@@ -1,16 +1,34 @@
-body {
-	/*background-color: lightblue;*/
+/*Below is the code for responsive*/
+
+@media only screen and (max-width: 650px) {
+.main-page-project {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
+
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+}
+
+@media only screen and (min-width: 1001px) {
+}
+
+
+
+/*Below is the style for index and overall page.*/
 
 header .row {
 	display: flex;
 	align-items: center;
+	/*background-image:;*/
+	/*background-color: #50514F;*/
 	
 }
 
 header nav {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 header p {
@@ -18,34 +36,181 @@ header p {
   margin: 0;
 }
 
-.short-des {
-	text-align: center;
-	margin:1%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+
+header #nav-item {
+	text-decoration: none;
+	color: #50514F;
+
 }
 
-.site-main-page .row {
-	/*width: 40%;
-	height: 40%;*/
+header #nav-item :hover {
+	font-size: 2em;
+	color: #70C1B3;
+}
+
+header .row .site-navigation #this-page {
+	/*text-decoration: none;*/
+	color: #247BA0;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.welcome-pic {
+	background-image: url("../image/homepage_header_pic_2.jpg");
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-size: cover;
+	height: 60vh;
+	margin-bottom: 1%;
+
+}
+
+.short-des p {
+	text-align: center;
+	padding: 5%;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.sub-nav {
+	text-align: center;
+	/*padding:5%;*/
+	margin-top: 1%;
+	margin-bottom: 0.1%;
 }
 
 .project-pic {
-	margin-top: 1%;
-/*	margin-right: 0.1%;
-	margin-left:0.1%;*/
-	margin-bottom: 1%;
-	align-items: center;
-	position: relative;
-	float: left;
+	/*padding:0.5%;*/
+	/*align-items: center;*/
+	/*position: absolute;*/
+	overflow: hidden;
+
 }
 
 .project-pic img {
-	width: 90%;
-	/*align-items: center;*/
+	width: 100%;
+	margin-bottom:1%;
+	opacity: 1;
 }
+
+.hover-text {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: -30px;
+	opacity: 0;
+	box-sizing: border-box;
+  	color: black;
+}
+
+.project-pic:hover .hover-text {
+	opacity: 1;
+
+}
+
+.project-pic:hover .hover-pic {
+	opacity: 0.1;
+}
+
 
 footer {
 	margin: 5%;
 	text-align: center;
+	/*I wrote some javascript to change the footer in the html file */
 }
+
+
+.separator {
+	margin-top: 1%;
+	/*height: 50px;*/
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+
+
+/*Below's the style for about page */
+
+.profile-des {
+	text-align: center;
+}
+
+.profile-des 
+
+.about-page-main {
+	margin-top: 2%;
+}
+
+
+.self-photo {
+	margin-bottom: 0.5%;
+}
+
+.select-pic {
+	position: absolute;
+	overflow: hidden;
+}
+
+.select-pic img {
+	margin-top:1%;
+	width:100%;
+	margin-bottom:1%;
+	opacity: 1;
+	/*position: absolute;*/
+}
+
+.select-pic:hover .hover-text {
+	opacity: 1;
+	bottom: -5px;
+	text-align: center;
+
+}
+
+.select-pic:hover .hover-pic {
+	opacity: 0.3;
+}
+
+
+.profile-des-detail div {
+	align-items: center;
+}
+
+.profile-des-detail .profile-professional li {
+	font-size: 0.9em;
+}
+
+/*Below's the style for project page*/
+
+.project-name {
+	color:#247BA0;
+	margin-top: 0.5%;
+	text-align: center;
+	/*margin-bottom: 3%;*/
+	
+
+}
+
+#project-snapshot {
+	margin-top: 0.5%;
+	width: 100%;
+/*	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: black;*/
+}
+
+.project-name .separator p{
+	font-size: 20px;
+
+}
+
+.project-des {
+	text-align:left;
+	padding-left:0.5%;
+	padding-right: 0.5%;
+}
+
+.project-des .project-about-2 {
+	line-height: 25%;
+}
+

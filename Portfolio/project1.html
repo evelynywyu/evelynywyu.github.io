@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Evelyn Yu | Protfolio</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<link href = "css/index_style.css" rel = "stylesheet">
+
+	</head>
+
+
+	<body style = "background-color: #f1f1f1">
+
+		<header class = "site-header container-fluid">
+			<div class = "row">
+				<div class = "site-logo col-sm-1">
+					<a href = "index.html"> <img style = "width: 70px;" src = "image/sitelogo.png"></a>
+				</div> 
+			
+
+				<nav class = "site-navigation col-sm-11">
+					 
+					<a href = "about.html" id="nav-item"><p> About </p></a>
+					<a href = "project.html" id="nav-item"><p id = "this-page"> Projects </p></a>
+					<a href = "https://www.linkedin.com/in/evelynywyu/" target="_blank" id="nav-item"><p> Resume </p></a>
+					
+				</nav>
+
+			</div>
+		
+		</header>
+
+
+		<main class = "project-name container-fluid">
+			<h2> Shiny Health </h2>
+			<h4> Individual project for course: Interaction Design </h4>
+			
+			<div class = "row separator">
+				<p> . . . </p>
+			</div> 
+
+			<div class = "row">
+				<div class = "col-sm-1">
+				</div> 
+
+				<div class = "col-sm-10 justify-content-center">
+					<img src = "image/Project1_header_pic.png" alt = "This picture illustrates the main steps taken in the project." id = "project-snapshot">
+				</div>
+
+				<div class = "col-sm-1">
+				</div>
+			</div>
+			
+			<div class = "row separator">
+				<p> . . . </p>
+			</div> 
+
+			<div class = "row project-des">
+				<div class = "col-sm-1">
+				</div>
+
+				<div class = "col-sm-6 project-about">
+					<h2> About the project </h2>
+					<h4>
+						In the class "Introduction of Interaction Design", we followed the design principle and designed a solution for a research problem that we are passionate about. 
+						I am passionate about sports. I have seen a lot of my friends get injuried during exercise but keep exercising, which is not the purpose of exercise. Hence, I want to create an app that can help people monitor their exercise and provide them with personalized exercise advice. 
+						 
+
+					</h4> 
+				</div>
+
+				<div class = "col-sm-4 project-about-2">
+
+					<h2> Skill </h2>
+					<h4> Sketch, Wireframe, Mock-up </h4>
+					<br>
+					<!-- <h2> Team </h2>
+					<h4> Professor: Chung-Hsing Huang, Jun-Yu Yu <br>
+						 Student researchers: Evelyn Yu, Steffi Lin, Shih-Yin Lu, Tsu-Chien Chiu 
+					</h4> -->
+					<!-- <br> -->
+					<h2> Time </h2>
+					<h4> Winter 2017 (In progress) </h4>
+
+				</div>
+
+				<div class = "col-sm-1">
+				</div>
+
+			</div>
+
+			<div class = "row separator">
+				<p> . . . </p>
+			</div> 
+
+
+
+
+		</main>
+
+		<footer class = "site-footer"> 
+			<div class = "site-footer-info">  <!-- to be fixed: didn't change back to the original text-->
+				<p id = "footer-text" onmouseover = "changeFooter()" 
+				onMouseOut = "changeFooterBack()">&copy; 2018 Evelyn Yu</p>
+			</div>
+
+		</footer>
+
+		
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	<script type="text/javascript">
+    	function changeFooter () {
+    		document.getElementById("footer-text").innerHTML = 'Finally I can call myself the girl who codes.';
+    		document.getElementById("footer-text").style.fontSize = '1.5em';
+    	}
+
+    	function changeFooterBack () {
+    		document.getElementById("footer-text").innerHTML = '&copy; 2018 Evelyn Yu';
+    		document.getElementById("footer-text").style.fontSize = '1em'
+    	}
+
+    </script>
+
+    <!-- The below links are pasted just in case I would use them! -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
+	
+	</body>
+</html>

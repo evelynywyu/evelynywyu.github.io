@@ -5,11 +5,12 @@
 		<title>Evelyn Yu | Protfolio</title>
 		<link href = "css/index_style.css" rel = "stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href = "css/about_style.css">
+		<link rel="stylesheet" href = "css/indext_style.css">
+		<!-- <link rel="stylesheet" href = "css/about_style.css"> -->
 
 	</head>
-	<body>
-		<header class = "site-header container">
+	<body style = "background-color: #f1f1f1">
+		<header class = "site-header container-fluid">
 			<div class = "row">
 				<div class = "site-logo col-sm-1">
 					<a href = "index.html"> <img style = "width: 70px;" src = "image/sitelogo.png"></a>
@@ -18,74 +19,192 @@
 
 				<nav class = "site-navigation col-sm-11">
 					 
-					<a href = "about.html"><p> About </p></a>
-					<a href = "project.html"><p> Projects </p></a>
-					<a href = "https://www.linkedin.com/in/evelynywyu/" target="_blank"><p> Resume </p></a>
+					<a href = "about.html" id = "nav-item"><p id = "this-page"> About </p></a>
+					<a href = "project.html" id = "nav-item"><p> Projects </p></a>
+					<a href = "https://www.linkedin.com/in/evelynywyu/" target="_blank" id = "nav-item"><p> Resume </p></a>
 					
 				</nav>
 
 			</div>
 		
 		</header>
-		<main class = "about-page-main container">
+		<main class = "about-page-main container-fluid">
 			<div class = 'row profile'>
 
-				<div class = "profile-photo col-sm-4">
+				<!-- <div class = "profile-photo col-sm-4">
 					<img src = "image/About_pro_pic.jpg" style = "width: 100%">
-				</div>
+				</div> -->
 
-				<div class = "profile-des col-sm-8"> <!-- THE IMAGE NEED TO BE ADJUSTED.-->
+				<div class = "profile-des col-sm-12"> <!-- THE IMAGE NEED TO BE ADJUSTED.-->
 					<h1> Evelyn Yiu-Wen Yu</h1>
-					<h3> TEST TEST </h3>
+					
+					<h4> 
+						MBA/MSI candidate at University of Michigan <br>
+						Passionate about technology -- currently look into opporunities in tech industry
+					</h4>
+					<br> 
+					
 				</div>
 
 			</div>
 
 			<div class = "row separator">
+				<p> . . . </p>
+			</div> 
+			
+			<div class = "row profile-des-detail justify-content-center">
+				<div class = "profile-professional col-sm-4">
+					<h3> Professional </h3>
+					<p> 2.5-year experience in consulting firm.
+						<ul>
+							<li> Projects: Process optimization, SAP system implementation </li>
+							<li> Industries: Financial service, Semi-conductor Manufacturer, Electric Automobile </li>
+						</ul>
+					</p>
+					<br>
+					<p>
+						1.5-year experience in internal consulting positions. 
+						<ul>
+							<li> Projects: Product portifolio redesign, System Analysis and Design, Prediction Model Development </li> 
+							<li> Industries: Healthcare, Food and Beverage, Public Relations Consulting </li>
+						</ul>
+					</p>
+				</div>
+
+				<div class = "profile-personal col-sm-4">
+					<h3> Personal </h3>
+					<p> Sports-enthuasitic: -- <br>
+						Played on college basketball team, ran maratons, did boxing, etc... <br>
+						Willing to try any kind of new sports! 
+						<br>
+						<br>
+						Foodie maybe? -- <br>
+						Always try new restaurants and take a lot of the food photo! 
+						ps. Coffee is eseential to life!
+						<br>
+						<br>
+						Travel the world! -- <br>
+						Love to walk around in a new city to explore the local.<br>
+						(Walked 120+ km in Tokyo in 5 days.)
+
+					</p>
+
+
+				</div>
+
+				<div class = "profile-skill col-sm-4">
+					<h3> Skills </h3>
+					<p>
+						<ul>
+							<li> Interview </li>
+							<li> Survey Design and Analysis </li>
+							<li> Web Design: html/css/Javascript </li>
+							<li> UX Design: Prototype and Wireframe (Adobe XD) </li>
+							<li> Data Analytics: Python and SQL </li>
+						</ul>
+					</p>
+				</div>
+
 			</div>
 
-			<div class = "row self-photo-row-1">
+			<div class = "row separator">
+				<p> . . . </p>
+			</div> 
+
+			<div class = "row self-photo self-photo-row-1">
 				<div class = "select-pic pic-col-1 col-sm-3">
-					<img src = "image/About_placeholder.png">
+					<img src = "image/About_pic1.JPG" class = "hover-pic">
+					<div class = "hover-text">
+						<p> Formosa Boulevard Station in Taiwan <br> Photo taken in 2014</p>
+					</div>
 				</div>
 				<div class = "select-pic pic-col-2 col-sm-3">
-					<img src = "image/About_placeholder.png">
+					<img src = "image/About_pic2.JPG" class = "hover-pic">
+					<div class = "hover-text">
+						<p> Basektball: I am because we are. <br> Photo taken in 2016 </p>
+					</div>
 				</div>
 				<div class = "select-pic pic-col-3 col-sm-3">
-					<img src = "image/About_placeholder.png">
+					<img src = "image/About_pic3.JPG" class = "hover-pic">
+					<div class = "hover-text">
+						<p> Chihuly Garden in Seattle <br> Photo taken in 2016 </p>
+					</div>
 				</div>
 				<div class = "select-pic pic-col-4 col-sm-3">
-					<img src = "image/About_placeholder.png">
+					<img src = "image/About_pic4.JPG" class = "hover-pic">
+					<div class = "hover-text">
+						<p> Rock Climbing in Taipei, Taiwan <br> Photo taken in 2014 </p>
+					</div>
 				</div>
 			</div> 
 
-			<div class = "row self-photo-row-2">
+			<div class = "row self-photo self-photo-row-2">
 				<div class = "select-pic pic-col-1 col-sm-3">
-					<img src = "image/About_placeholder.png">
+					<img src = "image/About_pic5.JPG"  class = "hover-pic">
+					<div class = "hover-text">
+						<p> Badges earned from running events <br> Photo taken in 2017 </p>
+					</div>
 				</div>
 				<div class = "select-pic pic-col-2 col-sm-3">
-					<img src = "image/About_placeholder.png">
+					<img src = "image/About_pic6.JPG"  class = "hover-pic">
+					<div class = "hover-text">
+						<p> Coffee is life! <br> Photo taken in 2017 </p>
+					</div>
 				</div>
 				<div class = "select-pic pic-col-3 col-sm-3">
-					<img src = "image/About_placeholder.png">
+					<img src = "image/About_pic7.jpg" class = "hover-pic">
+					<div class = "hover-text">
+						<p> Hiking 16 km in 6 hours in Taiwan <br> Photo taken in 2014 </p>
+					</div>
 				</div>
-				<div class = "select-pic pic-col-4 col-sm-3">
-					<img src = "image/About_placeholder.png">
+				<div class = "select-pic pic-col-4 col-sm-3" >
+					<img src = "image/About_pic8.JPG" class = "hover-pic">
+					<div class = "hover-text">
+						<p> Palau Güell in Barcelona <br> Photo taken in 2017 </p>
+					</div>
 				</div>
 			</div> 
 
 
 
 		</main>
-
 		<footer class = "site-footer"> 
-			<div class = "site-footer-info">
-				<p>&copy; 2018 Evelyn Yu</p>
+			<div class = "site-footer-info">  <!-- to be fixed: didn't change back to the original text-->
+				<p id = "footer-text" onmouseover = "changeFooter()" 
+				onMouseOut = "changeFooterBack()">&copy; 2018 Evelyn Yu</p>
 			</div>
-
 
 		</footer>
 
+		
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	<script type="text/javascript">
+    	function changeFooter () {
+    		document.getElementById("footer-text").innerHTML = 'Finally I can call myself the girl who codes.';
+    		document.getElementById("footer-text").style.fontSize = '1.5em';
+    	}
+
+    	function changeFooterBack () {
+    		document.getElementById("footer-text").innerHTML = '&copy; 2018 Evelyn Yu';
+    		document.getElementById("footer-text").style.fontSize = '1em'
+    	}
+
+    </script>
+
+    <script type = "text/javascript">
+    	function showText() {
+    		document.getElementById("img-text").style.display = "block";
+    	}
+    </script> 
+
+    <!-- The below links are pasted just in case I would use them! -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
+	
 	</body>
 
 

@@ -9,7 +9,7 @@
 
 	</head>
 	<body>
-		<header class = "site-header container">
+		<header class = "site-header container-fluid">
 			<div class = "row">
 				<div class = "site-logo col-sm-1">
 					<a href = "index.html"> <img style = "width: 70px;" src = "image/sitelogo.png"></a>
@@ -18,28 +18,52 @@
 
 				<nav class = "site-navigation col-sm-11">
 					 
-					<a href = "about.html"><p> About </p></a>
-					<a href = "project.html"><p> Projects </p></a>
-					<a href = "https://www.linkedin.com/in/evelynywyu/" target="_blank"><p> Resume </p></a>
+					<a href = "about.html" id="nav-item"><p> About </p></a>
+					<a href = "project.html" id="nav-item"><p id = "this-page"> Projects </p></a>
+					<a href = "https://www.linkedin.com/in/evelynywyu/" target="_blank" id="nav-item"><p> Resume </p></a>
 					
 				</nav>
 
 			</div>
 		
 		</header>
-		
+
 		<main>
 		</main>
 
 		<footer class = "site-footer"> 
-			<div class = "site-footer-info">
-				<p>&copy; 2018 Evelyn Yu</p>
+			<div class = "site-footer-info">  <!-- to be fixed: didn't change back to the original text-->
+				<p id = "footer-text" onmouseover = "changeFooter()" 
+				onMouseOut = "changeFooterBack()">&copy; 2018 Evelyn Yu</p>
 			</div>
-
 
 		</footer>
 
+		
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	<script type="text/javascript">
+    	function changeFooter () {
+    		document.getElementById("footer-text").innerHTML = 'Finally I can call myself the girl who codes.';
+    		document.getElementById("footer-text").style.fontSize = '1.5em';
+    	}
+
+    	function changeFooterBack () {
+    		document.getElementById("footer-text").innerHTML = '&copy; 2018 Evelyn Yu';
+    		document.getElementById("footer-text").style.fontSize = '1em'
+    	}
+
+    </script>
+
+    <!-- The below links are pasted just in case I would use them! -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
+	
 	</body>
+
 
 
 </html>
