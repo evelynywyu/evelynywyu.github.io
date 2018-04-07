@@ -182,6 +182,22 @@ footer {
 
 /*Below's the style for project page*/
 
+.main-page-project p{
+	margin-bottom: 3%;
+	font-size: 1.2em;
+	font-style: bold;
+
+}
+
+
+.product-page {
+	margin-top: 1%;
+	text-align: center;
+	/*font-size: 1.1em;*/
+	
+
+}
+
 .project-name {
 	color:#247BA0;
 	margin-top: 0.5%;
