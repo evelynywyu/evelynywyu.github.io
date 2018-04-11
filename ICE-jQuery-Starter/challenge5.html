@@ -41,23 +41,44 @@
 	<script type="text/javascript">
 	// I used Two functions here.  Starter idea at: 
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
-	$(document).ready(function() {
-		$(".preview").on('mouseover focus', showImage);
-		$(".preview").on('mouseout blur', hideImage);
+	// OLD VERSION BELOW // 
+	// $(document).ready(function() {
+	// 	$(".preview").on('mouseover focus', showImage);
+	// 	$(".preview").on('mouseout blur', hideImage);
 
-	})
+	// })
 
-	function showImage(){
-		$('#image')
-			.css("background-image","url(" + this.src + ")")
-			.text(this.alt);
-	}
+	// function showImage(){
+	// 	$('#image')
+	// 		.css("background-image","url(" + this.src + ")")
+	// 		.text(this.alt);
+	// }
 
-	function hideImage(){
-		$('#image')
-			.css("background-image", "url('')")
-			.text("Hover over an image below.")
-	}
+	// function hideImage(){
+	// 	$('#image')
+	// 		.css("background-image", "url('')")
+	// 		.text("Hover over an image below.")
+	// }
+
+
+	// NEW VERSION // 
+	$(document).ready(function(){
+		$(".preview").hover(function(){
+			$('#image').css("background-image",'url('+this.src+')');
+			$('#image').text(this.alt);
+		},function(){
+			$('#image').css("background-image",'');
+			$('#image').text('Hover over an image below.');
+		});
+		$(".preview").on('focus',function(){
+			$('#image').css("background-image",'url('+this.src+')');
+			$('#image').text(this.alt);
+		});
+		$(".preview").on('blur',function(){
+			$('#image').css("background-image",'');
+			$('#image').text('Hover over an image below.');
+		});
+	});
 
 	</script>
 </head>
@@ -72,19 +93,19 @@
 		<img class = "preview" 
 			alt = "Styling with a Bandana" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			tabindex = "1" >
+			tabindex = "0" >
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
 		<img class = "preview" 
 			alt = "With My Boy" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";
-			tabindext = "1">
+			tabindext = "0">
 	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
 			alt = "Young Puppy";
-			tabindext = "1">
+			tabindext = "0">
 </body>
 </html>
