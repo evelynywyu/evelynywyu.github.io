@@ -12,9 +12,11 @@
 							display: 'none',
 						
 						});
+					
 					$('.pic-2').css({
-							justifyContent:'center',
-							alignItems:'center',
+							width:'50%',
+							// "alignItems":'center',
+							margin: '0',
 							
 						});
 					// $('div.row').html('
@@ -26,13 +28,16 @@
 					// 	<div class = "col-sm-3">
 					// 	</div> 
 					// 	');
-				
 
 				});
 
 
 				$('#show-button').click(function(){
 					$('.pic-1').show();
+					$('.pic-2').css(
+						{
+							width:'100%',
+						});
 				});
 
 

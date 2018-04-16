@@ -12,14 +12,14 @@ body {
 	align-items: center;
 }
 
-.col-centered {
+/*.col-centered {
 	display:flex;
 	align-items: center;
 	justify-content:center;
 	position: relative;
 	margin: 0 auto;
 
-}
+}*/
 
 .pic{
 	border-style: solid;
